@@ -1,10 +1,12 @@
 #RentalX
 
 - /src -> Diretório que contém todos os códigos fonte da aplicação.
-  
-- /src/model -> Camada responsável por criar modelos das classes da aplicação.
 
-- /src/repositories -> Camada responsável por fazer a manipulação de dados da aplicação.
+- /src/modules -> Camada responsável por modularizar a aplicação, criando um diretório para cada uma das entidades principais, e este diretório conterá as lógicas referentes ao módulo.
+  
+- /src/modules/model -> Camada responsável por criar modelos das classes da aplicação.
+
+- /src/modules/repositories -> Camada responsável por fazer a manipulação de dados da aplicação.
 
   - Tipos de arquivo dentro dos repositories:
   
@@ -57,9 +59,8 @@
       </tr>
     </table>
 
-
-- /src/routes -> Camada responsável por conter as rotas da aplicação. As rotas devem receber uma requisição, encaminhar para um repositório ou para um serviço para que esses façam as manipulações necessárias e devolvam apenas a resposta para a rota, que irá receber e redirecionar a resposta para o caminho correto..
-
-- /src/services -> Camada responsável por fazer verificações e validações dos serviços.
+- /src/modules/services -> Camada responsável por fazer verificações e validações dos serviços.
+  
+- /src/routes -> Camada responsável por conter as rotas da aplicação. As rotas devem receber uma requisição, encaminhar para um repositório ou para um serviço para que esses façam as manipulações necessárias e devolvam apenas a resposta para a rota, que irá receber e redirecionar a resposta para o caminho correto.
 
 - /src/server.ts -> Arquivo utilizado como servidor principal da aplicação.
