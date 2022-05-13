@@ -11,9 +11,11 @@ categoriesRoutes.post('/', (request, response) => {
 
   const category = new Category();
 
-  category.name = name;
-  category.description = description;
-  category.created_at = new Date();
+  Object.assign(category, {
+    name,
+    description,
+    created_at: new Date(),
+  });
 
   categories.push(category);
 
