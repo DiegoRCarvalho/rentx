@@ -9,6 +9,8 @@
 - /src/modules/cars/model -> Camada responsável por criar modelos das classes da aplicação.
 
 - /src/modules/cars/repositories -> Camada responsável por fazer a manipulação de dados da aplicação.
+  
+- /src/modules/cars/repositories/implementations -> Camada responsável por amazenar os repositórios da aplicação.
 
   - Tipos de arquivo dentro dos repositories:
   
