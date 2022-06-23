@@ -1,4 +1,4 @@
-import { Category } from '../model/Category';
+import { Category } from '../entities/Category';
 
 // DTO - Data Transfer Object - Used to receive parameters that come from routes.
 interface ICreateCategoryDTO {
